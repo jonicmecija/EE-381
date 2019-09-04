@@ -4,7 +4,7 @@ Project 1
 Jonic Mecija
 014467048
 Start Date: 8/26/19
-End Date: 8/28/19
+End Date: 9/4/19
 '''
 
 
@@ -63,9 +63,7 @@ def main():
         from collections import Counter
 
         c = Counter(V) #creates tuples of elements in the list (not mutable)
-        print(c)
         freq = c.most_common() #most common method
-        print(freq)
         max_occur = freq[0][1] #second element of tples will be max assigned
 
         if max_occur != 1:
