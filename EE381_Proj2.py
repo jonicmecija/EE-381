@@ -8,18 +8,35 @@ Start Date: September 11, 2019
 End Date:
 
 Description: Write te code for the pseudorandom number generator (RNG).
- Use the RNG to solve probability problems.
+ Use the RNG to solve probability problems. This is problem 1.
 '''
 import math
+import time
 
+t = time.process_time()
+
+#print(int(10000*t))
 #Constants for RNG
-N = 10000 # the norm
+N = 100000 # the norm
 A = 4857 # the adder
 M = 8601 # the multiplier
+S = int(10000*t)
+Ball = [0,0,0] # initially balls not cans
+Sum = 0
 
-S = int(input("Enter a value to start RNG: "))
+E = int(input('How man experiments?'))
 
-N = 25
+for j in range(E):
+    for i in range(3):
+        S = (M* S + A) % N
+        r = S/N
+        canNumber = math.floor(5*r+1)
+        Ball[i] = canNumber
+    if (Ball[0] != Ball[1]) and (Ball[1] != Ball[2]) and (Ball[0] != Ball[2]):
+        Sum +=1 
+
+prob = Sum / E
+print('Probability: ', prob)
 
 
 '''
@@ -48,7 +65,6 @@ for i in range(100):
         print("T")
     else:
         print("H")
-'''
 
 # simulate die
 for i in range(100):
@@ -57,3 +73,5 @@ for i in range(100):
 
     die = math.floor(6*r+1)
     print(die)
+
+'''
