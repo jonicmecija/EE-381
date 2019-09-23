@@ -5,7 +5,7 @@ Project 2
 Jonic Mecija
 014467048
 Start Date: September 11, 2019
-End Date:
+End Date: September 26, 2019
 
 Description: Write te code for the pseudorandom number generator (RNG).
  Use the RNG to solve probability problems. This is problem 1.

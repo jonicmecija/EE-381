@@ -5,9 +5,9 @@ Project 2
 Jonic Mecija
 014467048
 Start Date: September 16, 2019
-End Date:
+End Date: September 26, 2019
 
-Description: Problem 2.
+Description: Project 2 Problem 2.
 '''
 import math
 import time
@@ -27,7 +27,7 @@ def main():
                         b = len(x)
                         failure += b
         p = success / (success + failure)
-        print(p)
+        print("Probability of sum of three before sum of 7:", p)
 
 def diceroll():
         #Constants for RNG
