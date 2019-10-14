@@ -18,7 +18,7 @@ S = random.randint(0,1) # initial location
 L.append(S)
 
 p = float(input('Enter the probability of going from node 0 to node 1.'))
-q = float(input('Enter the probability of going from node 1 to node 2.'))
+q = float(input('Enter the probability of going from node 1 to node 0.'))
 
 
 for i in range(24):
@@ -31,6 +31,7 @@ for i in range(24):
         S = 0
 
     # below formatting of output 
+
     L.append(S)
 
 for i in range(25):
