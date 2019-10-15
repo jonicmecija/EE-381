@@ -66,6 +66,7 @@ for i in range(100):
     else:
         print("H")
 
+
 # simulate die
 for i in range(100):
     S = (M * S + A) % N

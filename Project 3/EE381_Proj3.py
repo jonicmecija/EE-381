@@ -26,6 +26,6 @@ for j in range(T):
     r = random.uniform(0,1)
 
     if r < p:
-        print("H", end =" ")
+        print("H", end=" ")
     else:
-        print("T", end =" ")
+        print("T", end=" ")
